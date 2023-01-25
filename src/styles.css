@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+/* setting the min height and width regardless of screen size + centering */
+#body{
+  min-height: 30vh;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding:0px;
+  margin: 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* ----- Header ----- */
+.header{
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+/* ----- Container ----- */
+.bg-grey{
+  background-color:#d8d5d5;
+}
+
+.div-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.container  {
+  flex-flow: column;
+  padding-top: 30px;
+  display: flex;
+  width:80%;
+}
+.div-title{
+  text-align: center;
+}
+
+.box{
+  display: flex;
+  width:100%;
+}
+
+#sect1{
+  font-size: 22px;
+  width: 100%;
+}
+
+#sect2{
+  width:50%;
+}
+/* styling all div elements within box */
+.box > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 30px;
+}
+
+.btn {
+  margin-top: 15px;
+  height: 40px;
+  width: 100%;
+  color: white;
+  border: 0;
+  background-color: #ff7e00;
+}
+/* adding media queries for responsive design */
+@media only screen and (min-width:320px) and (max-width:725px){
+  .box{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+  }
+}
+
